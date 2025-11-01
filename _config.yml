@@ -88,6 +88,18 @@ naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+
 # Social Sharing
 twitter:
   username               :
