@@ -1,42 +1,36 @@
 ---
-title: "Welcome"
-layout: single
+title: "Brian Leonard"
+layout: splash
 permalink: /
-author_profile: true
+header:
+  overlay_color: "#5a5a5a"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/header-bg.jpg
+  actions:
+    - label: "View My Work"
+      url: "#articles"
+excerpt: "Principal Solutions Architect at MongoDB | IFR-Rated Pilot"
 ---
 
-## ✈️ Brian Leonard
+<div class="insights-section" id="articles">
+  <h2>Articles</h2>
+  {% include blog_grid.html %}
+</div>
 
-**Principal Solutions Architect | IFR-Rated Cirrus Pilot | Workflow Optimizer**
-
-I modernize legacy systems, streamline technical workflows, and fly smarter skies. Whether I’m refining cockpit automation or architecting GenAI-enabled tools, I bring precision, warmth, and a systems-thinking mindset to every challenge.
-
----
-
-## 🔧 What I Do
-
-- **Legacy Modernization**: Transforming outdated systems into scalable, secure platforms.
-- **GenAI Integration**: Designing tools that blend automation with human insight.
-- **Aviation Ops**: Hands-on with flight planning, weather analysis, and CSIP outreach.
-- **Workflow Design**: From irrigation to IT, I build modular systems that work.
-
----
-
-## 📝 Recent Posts
-
-{% include blog_grid.html %}
-
----
-
-## 🛩️ Flight Ops & Papa Patrol
-
-When I’m not optimizing databases or negotiating with vendors, I’m flying out of KSGJ or keeping the family chat lively with Billy Butcher banter and dad jokes. I believe great systems—and great relationships—are built with clarity, humor, and a touch of flair.
-
----
-
-## 📬 Let’s Connect
-
-- [GitHub](https://github.com/wbleonard)
-- [LinkedIn](https://www.linkedin.com/in/brianleonard)
-- [MongoDB Profile](#) *(optional)*
-- [Contact Me](mailto:your.email@example.com)
+<div class="connect-section">
+  <h2>📬 Let's Connect</h2>
+  <div class="contact-grid">
+    <a href="https://github.com/wbleonard" class="contact-link">
+      <i class="fab fa-github"></i>
+      <span>GitHub</span>
+    </a>
+    <a href="https://www.linkedin.com/in/wbrianleonard" class="contact-link">
+      <i class="fab fa-linkedin"></i>
+      <span>LinkedIn</span>
+    </a>
+    <a href="mailto:williambleonard-mail@yahoo.com" class="contact-link">
+      <i class="fas fa-envelope"></i>
+      <span>Email</span>
+    </a>
+  </div>
+</div>

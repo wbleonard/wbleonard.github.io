@@ -5,5 +5,203 @@ search: false
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes/skins/air"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Force white text in splash header - override everything
+.page__hero-overlay,
+.page__hero--overlay {
+  color: #fff !important;
+  
+  * {
+    color: #fff !important;
+  }
+  
+  .page__title,
+  .page__meta,
+  .page__lead,
+  p,
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  }
+  
+  .btn {
+    background: rgba(255,255,255,0.2);
+    border: 2px solid #fff;
+    color: #fff !important;
+    
+    &:hover {
+      background: rgba(255,255,255,0.3);
+    }
+  }
+}
+
+// Custom styles for homepage refresh - Full width sections
+.page__content {
+  > div[class$="-section"] {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 3rem calc(50vw - 50%);
+  }
+}
+
+.hero-section {
+  text-align: center;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+// Section headings
+.expertise-section,
+.insights-section,
+.connect-section {
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+
+  .skill-item {
+    text-align: center;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    i {
+      font-size: 2.5rem;
+      color: #007acc;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  }
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #007acc;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #005a9e;
+      color: white;
+    }
+
+    i {
+      font-size: 1.2rem;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+
+  .post-preview {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+      margin-bottom: 0.5rem;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .post-meta {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.no-posts {
+  text-align: center;
+  font-style: italic;
+  margin: 2rem 0;
+}
+
+// Hide "Powered by Jekyll & Minimal Mistakes" in footer
+.page__footer-copyright {
+  display: none;
+}
