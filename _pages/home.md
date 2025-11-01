@@ -28,6 +28,10 @@ excerpt: "Principal Solutions Architect at MongoDB | IFR-Rated Pilot"
       <i class="fab fa-linkedin"></i>
       <span>LinkedIn</span>
     </a>
+    <a href="https://wbleonard.github.io/blog/" class="contact-link">
+      <i class="fas fa-archive"></i>
+      <span>Blog Archive</span>
+    </a>
     <a href="mailto:williambleonard-mail@yahoo.com" class="contact-link">
       <i class="fas fa-envelope"></i>
       <span>Email</span>
