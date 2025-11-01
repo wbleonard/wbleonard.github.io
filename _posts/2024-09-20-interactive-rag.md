@@ -1,6 +1,6 @@
 ---
 title: "Interactive RAG System"
-date: 2024-09-20
+date: 2023-12-11
 categories: [AI, RAG, MongoDB]
 excerpt: "An interactive Retrieval-Augmented Generation (RAG) system leveraging MongoDB Atlas for intelligent document retrieval."
 ---

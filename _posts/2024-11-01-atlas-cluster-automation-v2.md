@@ -1,6 +1,6 @@
 ---
 title: "Atlas Cluster Automation V2"
-date: 2024-11-01
+date: 2025-09-04
 categories: [MongoDB, Automation]
 excerpt: "Automated MongoDB Atlas cluster management and orchestration using modern tooling and best practices."
 ---

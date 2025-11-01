@@ -1,6 +1,6 @@
 ---
 title: "Movie Recommendations Engine"
-date: 2024-10-01
+date: 2024-01-18
 categories: [MongoDB, Machine Learning]
 excerpt: "Building a movie recommendation system using MongoDB's aggregation framework and machine learning techniques."
 ---
